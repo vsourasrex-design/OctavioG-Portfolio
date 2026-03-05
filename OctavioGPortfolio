@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Octavio J Garza</title>
+ <style>
+     {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+    }
+
+    .container {
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+
+    header {
+      background-color: #35424a;
+      color: white;
+      text-align: center;
+      padding: 20px;
+    }
+
+    .main-content {
+      display: flex;
+      flex: 1;
+    }
+
+    aside {
+      background-color: #4e5d69;
+      color: white;
+      width: 200px;
+      padding: 20px;
+      text-align: center;
+    }
+
+    main {
+      flex: 1;
+      padding: 20px;
+      background-color: white;
+      color: #333;
+    }
+
+    footer {
+      background-color: #35424a;
+      color: white;
+      text-align: center;
+      padding: 10px;
+    }
+
+    @media (max-width: 768px) {
+      .main-content {
+        flex-direction: column;
+      }
+      aside {
+        width: 100%;
+        padding: 10px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>My Flexbox Website</h1>
+    </header>
+<div class="main-content">
+      <aside>
+        <h2>Navigation</h2>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Services</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </aside>
+
+      <main>
+        <h2>Welcome to My Website</h2>
+        <p>This is my website for my portfolio.</p>
+      </main>
+    </div>
+
+    <footer>
+      <p>&copy; 2026 Octavio J. Garza. All rights reserved.</p>
+    </footer>
+  </div>
+</body>
+</html>
