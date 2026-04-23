@@ -1,22 +1,47 @@
-<section class="contact">
-    <h2>About Octavio Garza</h2>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact</title>
+<link rel="stylesheet" href="./css/styles.css">
+</head>
 
-    <p>
-        Heyo my name is Octavio Garza I am visual creator specializing in photography,
-        video editing, and digital illustration. my work focuses on storytelling through
-        strong visual composition, modern editing techniques, and creative direction.
-    </p>
+<body>
 
-    <p>
-        With a passion for capturing emotion and crafting compelling narratives,
-        Octavio brings projects to life through both still imagery and motion design.
-    </p>
+<header class="flex-between">
+    <h1>Contact</h1>
+    <nav>
+        <ul class="flex">
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./photography.html">Photography</a></li>
+            <li><a href="./video.html">Video</a></li>
+            <li><a href="./illustration.html">Illustration</a></li>
+            <li><a href="./contact.html">Contact</a></li>
+        </ul>
+    </nav>
+</header>
 
-    <h3>Contact</h3>
-    <form id="contactForm">
-        <input type="text" placeholder="Your Name" required>
-        <input type="email" placeholder="Your Email" required>
-        <textarea placeholder="Your Message"></textarea>
-        <button type="submit">Send Message</button>
+<section class="contact-container">
+
+    <div class="contact-text">
+        <h2>About Octavio Garza</h2>
+        <p>
+            Octavio Garza is a visual creator specializing in photography,
+            video editing, and illustration. His work focuses on storytelling,
+            composition, and modern visual design.
+        </p>
+    </div>
+
+    <form class="contact-form" id="contactForm">
+        <input type="text" placeholder="Name" required>
+        <input type="email" placeholder="Email" required>
+        <textarea placeholder="Message"></textarea>
+        <button type="submit">Send</button>
     </form>
+
 </section>
+
+<script src="./js/script.js"></script>
+</body>
+</html>
