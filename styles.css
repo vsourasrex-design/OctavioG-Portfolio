@@ -3,25 +3,37 @@
     -accent: #4CAF50;
     -bg: #F5F7F6;
     -text: #1A1A1A;
+    -max-width: 1200px;
+}
+
+ {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 body {
-    margin: 0;
-    font-family: Arial, sans-serif;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
     background: var(--bg);
     color: var(--text);
 }
 
-/* FLEX */
+
+.container {
+    width: 90%;
+    max-width: var(--max-width);
+    margin: auto;
+}
+
 .flex { display: flex; gap: 1rem; }
 .flex-between { display: flex; justify-content: space-between; align-items: center; }
 .flex-center { display: flex; justify-content: center; align-items: center; }
 
-/* HEADER */
+
 header {
     background: var(--primary);
     color: white;
-    padding: 1rem 2rem;
+    padding: 1rem 0;
 }
 
 nav a {
@@ -29,68 +41,71 @@ nav a {
     text-decoration: none;
 }
 
-/* HERO */
+
 .hero {
-    height: 60vh;
+    min-height: 60vh;
     text-align: center;
 }
 
-/* CARDS */
 .preview {
     display: flex;
+    flex-wrap: wrap;
     gap: 2rem;
-    padding: 2rem;
+    padding: 2rem 0;
 }
 
 .card {
-    flex: 1;
+    flex: 1 1 300px;
     background: white;
     padding: 2rem;
     border-radius: 10px;
 }
 
-/* GALLERY */
+
 .grid {
     display: flex;
     flex-wrap: wrap;
     gap: 1rem;
-    padding: 2rem;
+    padding: 2rem 0;
 }
 
 .grid img {
-    width: calc(33% - 1rem);
+    width: calc(33.333% - 1rem);
+    aspect-ratio: 1/1;
+    object-fit: cover;
 }
 
-/* VIDEO */
-.video-container {
-    padding: 2rem;
-}
 
 .video-row {
     display: flex;
+    flex-wrap: wrap;
     gap: 2rem;
+    padding: 2rem 0;
 }
 
 video {
-    width: 60%;
+    width: 100%;
+    max-width: 600px;
 }
 
 
 .illustration-item {
     display: flex;
+    flex-wrap: wrap;
     gap: 2rem;
-    padding: 2rem;
+    padding: 2rem 0;
 }
 
 .illustration-item img {
-    width: 50%;
+    width: 100%;
+    max-width: 500px;
 }
 
-/* CONTACT */
 .contact-container {
     display: flex;
+    flex-wrap: wrap;
     gap: 2rem;
-    padding: 2rem;
+    padding: 2rem 0;
 }
 
 .contact-form {
@@ -99,17 +114,31 @@ video {
     gap: 1rem;
 }
 
-/* RESPONSIVE */
+input, textarea {
+    padding: 0.8rem;
+}
+
+button {
+    background: var(--primary);
+    color: white;
+    border: none;
+    padding: 0.8rem;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 1rem;
+    background: var(--primary);
+    color: white;
+}
+
 @media (max-width: 768px) {
-    .preview,
+    .flex,
     .video-row,
     .illustration-item,
     .contact-container {
         flex-direction: column;
-    }
-
-    video, .illustration-item img {
-        width: 100%;
     }
 
     .grid img {
