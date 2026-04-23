@@ -1,9 +1,41 @@
-<section class="gallery">
-    <h2>Videography</h2>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Video</title>
+<link rel="stylesheet" href="./css/styles.css">
+</head>
 
-    <div class="grid">
-        <img src="images/video1.jpg" alt="video 1">
-        <img src="images/video2.jpg" alt="video 2">
-        <img src="images/video3.jpg" alt="video 3">
+<body>
+
+<header class="flex-between">
+    <h1>Video Projects</h1>
+    <nav>
+        <ul class="flex">
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./photography.html">Photography</a></li>
+            <li><a href="./video.html">Video</a></li>
+            <li><a href="./illustration.html">Illustration</a></li>
+            <li><a href="./contact.html">Contact</a></li>
+        </ul>
+    </nav>
+</header>
+
+<section class="video-container">
+
+    <div class="video-row">
+        <video controls>
+            <source src="./videos/video1.mp4" type="video/mp4">
+        </video>
+        <div class="video-info">
+            <h3>Project Title</h3>
+            <p>Professional video editing and storytelling.</p>
+        </div>
     </div>
+
 </section>
+
+<script src="./js/script.js"></script>
+</body>
+</html>
