@@ -1,98 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Octavio J Garza</title>
-<link rel="stylesheet" href="mystyle.css">
-<style>
-     {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
-
-    body {
-      font-family: Arial, sans-serif;
-      background-color: #f4f4f4;
-    }
-
-    .container {
-      display: flex;
-      flex-direction: column;
-      min-height: 100vh;
-    }
-
-    header {
-      background-color: #35424a;
-      color: white;
-      text-align: center;
-      padding: 20px;
-    }
-
-    .main-content {
-      display: flex;
-      flex: 1;
-    }
-
-    aside {
-      background-color: #4e5d69;
-      color: white;
-      width: 200px;
-      padding: 20px;
-      text-align: center;
-    }
-
-    main {
-      flex: 1;
-      padding: 20px;
-      background-color: white;
-      color: #333;
-    }
-
-    footer {
-      background-color: #35424a;
-      color: white;
-      text-align: center;
-      padding: 10px;
-    }
-
-    @media (max-width: 768px) {
-      .main-content {
-        flex-direction: column;
-      }
-      aside {
-        width: 100%;
-        padding: 10px;
-      }
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio of Octavio Garza</title>
+    <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-  <div class="container">
-    <header>
-      <h1> Portfolio</h1>
-    </header>
-<div class="main-content">
-      <aside>
-        <h2>Navigation</h2>
-        <ul>
-          <li><a href="#">Home</a></li>
-          <li><a href="#">About</a></li>
-          <li><a href="#">Services</a></li>
-          <li><a href="#">Contact</a></li>
-        </ul>
-      </aside>
 
-      <main>
-        <h2>Welcome to My Website</h2>
-        <p>This is my website for my portfolio.</p>
-      </main>
+<header>
+    <h1>Octavio Garza</h1>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="photography.html">Photography</a></li>
+            <li><a href="video.html">Video</a></li>
+            <li><a href="illustration.html">Illustration</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+</header>
+
+<section class="hero">
+    <h2>Visual Storytelling Through Lens & Design</h2>
+    <p>Photography, video editing, and illustration crafted with precision and creativity.</p>
+</section>
+
+<section class="preview">
+    <div class="card">
+        <h3>Photography</h3>
+        <p>Capturing moments with artistic perspective.</p>
+        <a href="photography.html">View Gallery</a>
     </div>
 
-    <footer>
-      <p>&copy; 2026 Octavio J. Garza. All rights reserved.</p>
-    </footer>
-  </div>
+    <div class="card">
+        <h3>Video Editing</h3>
+        <p>Dynamic storytelling through motion.</p>
+        <a href="video.html">Watch Projects</a>
+    </div>
+
+    <div class="card">
+        <h3>Illustrations</h3>
+        <p>Creative visuals and digital artwork.</p>
+        <a href="illustration.html">Explore Work</a>
+    </div>
+</section>
+
+<footer>
+    <p>© 2026 Octavio Garza | Designed by Octavio Garza</p>
+</footer>
+
+<script src="js/script.js"></script>
 </body>
 </html>
