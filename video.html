@@ -9,31 +9,30 @@
 
 <body>
 
-<header class="flex-between">
+<header>
+  <div class="container flex-between">
     <h1>Video Projects</h1>
     <nav>
-        <ul class="flex">
-            <li><a href="./index.html">Home</a></li>
-            <li><a href="./photography.html">Photography</a></li>
-            <li><a href="./video.html">Video</a></li>
-            <li><a href="./illustration.html">Illustration</a></li>
-            <li><a href="./contact.html">Contact</a></li>
-        </ul>
+      <ul class="flex">
+        <li><a href="./index.html">Home</a></li>
+        <li><a href="./photography.html">Photography</a></li>
+        <li><a href="./video.html">Video</a></li>
+        <li><a href="./illustration.html">Illustration</a></li>
+        <li><a href="./contact.html">Contact</a></li>
+      </ul>
     </nav>
+  </div>
 </header>
 
-<section class="video-container">
+<section class="container video-row">
+  <video controls>
+    <source src="./videos/video1.mp4" type="video/mp4">
+  </video>
 
-    <div class="video-row">
-        <video controls>
-            <source src="./videos/video1.mp4" type="video/mp4">
-        </video>
-        <div class="video-info">
-            <h3>Project Title</h3>
-            <p>Professional video editing and storytelling.</p>
-        </div>
-    </div>
-
+  <div>
+    <h3>Project Title</h3>
+    <p>Professional video editing and storytelling.</p>
+  </div>
 </section>
 
 <script src="./js/script.js"></script>
