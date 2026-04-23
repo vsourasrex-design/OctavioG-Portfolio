@@ -1,0 +1,133 @@
+:root {
+    --primary: #1B5E20;
+    --accent: #4CAF50;
+    --background: #F5F7F6;
+    --text: #1A1A1A;
+    --secondary: #6B7280;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+    background: var(--background);
+    color: var(--text);
+}
+
+/* Header */
+header {
+    background: var(--primary);
+    color: white;
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 1.5rem;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: var(--accent);
+}
+
+/* Hero */
+.hero {
+    text-align: center;
+    padding: 4rem 2rem;
+}
+
+.hero h2 {
+    font-size: 2.5rem;
+    color: var(--primary);
+}
+
+/* Cards */
+.preview {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    padding: 2rem;
+}
+
+.card {
+    background: white;
+    padding: 2rem;
+    border-radius: 10px;
+    width: 250px;
+    text-align: center;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.card a {
+    display: inline-block;
+    margin-top: 1rem;
+    color: var(--accent);
+}
+
+/* Gallery */
+.gallery {
+    padding: 2rem;
+    text-align: center;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1rem;
+    margin-top: 2rem;
+}
+
+.grid img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+/* Contact */
+.contact {
+    padding: 2rem;
+    max-width: 600px;
+    margin: auto;
+}
+
+input, textarea {
+    width: 100%;
+    margin-top: 1rem;
+    padding: 0.8rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    margin-top: 1rem;
+    padding: 0.8rem;
+    background: var(--primary);
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background: var(--accent);
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 1rem;
+    background: var(--primary);
+    color: white;
+}
